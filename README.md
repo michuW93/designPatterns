@@ -10,3 +10,6 @@ certain steps of an algorithm without changing the
 algorithm’s structure.
 
 General receipe is in CaffeineBeverage while in Tea and Coffe extends this class and provide implementation for it's own methods. `boilWater` and `pourInCup` already have logic in abstract class while methods used strictly for tea/coffe are abstract so CaffeineBeverage doesn't know about implementation and tea/coffee classes provide logic for them.
+
+3.**Singleton**: The Singleton Pattern ensures a class has only one instance, and provides a global point of access to it.
+private constructor, private static instance, can be synchronized to avoid creating two instances by other threads and can be done via enum
