@@ -13,6 +13,20 @@ General receipe is in CaffeineBeverage while in Tea and Coffe extends this class
 
 3.**Singleton**: The Singleton Pattern ensures a class has only one instance, and provides a global point of access to it.
 private constructor, private static instance, can be synchronized to avoid creating two instances by other threads and can be done via enum to avoid serialization problems (This approach (enum) is similar to the public field approach, but it is more concise, provides the serialization machinery for free, and provides an ironclad guarantee against multiple instantiation, even in the face of sophisticated serialization or reflection attacks. This approach may feel a bit unnatural, but a single-element enum type is often the best way to implement a singleton. Note that you can’t use this approach if your singleton must extend a superclass other than Enum (though you can declare an enum to implement interfaces).)
+The singleton design pattern solves problems like:
+
+How can it be ensured that a class has only one instance?
+How can the sole instance of a class be accessed easily?
+How can a class control its instantiation?
+How can the number of instances of a class be restricted?
+How can a global variable be accessed?
+The singleton design pattern describes how to solve such problems:
+
+Hide the constructor of the class.
+Define a public static operation (getInstance()) that returns the sole instance of the class.
+The key idea in this pattern is to make the class itself responsible for controlling its instantiation (that it is instantiated only once).
+The hidden constructor (declared private) ensures that the class can never be instantiated from outside the class.
+The public static operation can be accessed easily by using the class name and operation name (Singleton.getInstance()).
 
 4.**Decorator**:https://stackoverflow.com/questions/2707401/understand-the-decorator-pattern-with-a-real-world-example
 The Decorator Pattern attaches additional responsibilities to an object dynamically. Decorators provide a fl exible alternative to subclassing for extending functionality.
