@@ -2,6 +2,12 @@
 Design patterns in java
 
 1. **Facade**: https://stackoverflow.com/a/64160519/4952262, method which do many things inside so client just call this method and everything happens inside (one method call instead of much more)
+The facade pattern is typically used when
+
+a simple interface is required to access a complex system,
+a system is very complex or difficult to understand,
+an entry point is needed to each level of layered software, or
+the abstractions and implementations of a subsystem are tightly coupled.
 
 2. **Template method**: The Template Method Pattern defines the skeleton
 of an algorithm in a method, deferring some steps to
