@@ -2,6 +2,7 @@
 Design patterns in java
 
 1. **Facade**: https://stackoverflow.com/a/64160519/4952262, method which do many things inside so client just call this method and everything happens inside (one method call instead of much more)
+
 The facade pattern is typically used when
 
 a simple interface is required to access a complex system,
