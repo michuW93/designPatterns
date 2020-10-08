@@ -17,4 +17,5 @@ private constructor, private static instance, can be synchronized to avoid creat
 4.**Decorator**:https://stackoverflow.com/questions/2707401/understand-the-decorator-pattern-with-a-real-world-example
 
 5.**Observer pattern**: The Observer Pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
-So there is a subject and when something change in subject then observators are getting notified. Observators should subscribe and unsubcribe subject when they want and as many times as they want. Example: listeners on e.g buttons in swing
+So there is a subject and when something change in subject then observators are getting notified. Observators should subscribe and unsubcribe subject when they want and as many times as they want. Example: listeners on e.g buttons in swing.
+One to Many relationship
