@@ -41,3 +41,8 @@ The Decorator Pattern attaches additional responsibilities to an object dynamica
 5.**Observer pattern**: The Observer Pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
 So there is a subject and when something change in subject then observators are getting notified. Observators should subscribe and unsubcribe subject when they want and as many times as they want. Example: listeners on e.g buttons in swing.
 One to Many relationship
+
+6.**Factory method**: good when we have:
+if("cheese") then create CheesePizza
+else if("ham") then create HamPizza
+etc.
