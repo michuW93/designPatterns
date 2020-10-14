@@ -1,4 +1,4 @@
-package FactoryMethod;
+package FactoryMethod.Pizza;
 
 public class FactoryMethodTest {
     public static void main(String[] args){

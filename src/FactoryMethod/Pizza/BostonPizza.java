@@ -1,4 +1,4 @@
-package FactoryMethod;
+package FactoryMethod.Pizza;
 
 public class BostonPizza extends Pizza {
     @Override
