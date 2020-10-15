@@ -1,8 +1,12 @@
 package Command.SimpleCase;
 
 public class Stock {
-    private String name = "Action";
-    private int quantity = 10;
+    private String name;
+    private int quantity = 5;
+
+    public Stock(String name) {
+        this.name = name;
+    }
 
     public void buy() {
         System.out.println("Stock [ Name: " + name + ", Quantity:" + quantity +" ]bought ");
