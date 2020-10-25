@@ -51,3 +51,5 @@ Factory pattern is one of the most used design patterns in Java. This type of de
 In Factory pattern, we create object without exposing the creation logic to the client and refer to newly created object using a common interface.
 
 7.**Command pattern**:
+
+8.**Adapter pattern**:
