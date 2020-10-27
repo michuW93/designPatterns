@@ -53,3 +53,6 @@ In Factory pattern, we create object without exposing the creation logic to the 
 7.**Command pattern**:
 
 8.**Adapter pattern**:
+
+9.**Iterator pattern**: provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
+Two menus, one works on arraylist, second on array. So need to use interface iterator then for print both menus we can use one method.
