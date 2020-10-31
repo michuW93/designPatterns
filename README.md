@@ -58,3 +58,5 @@ In Factory pattern, we create object without exposing the creation logic to the 
 Two menus, one works on arraylist, second on array. So need to use interface iterator then for print both menus we can use one method.
 
 10.**Strategy pattern**:
+
+11.**State**:
