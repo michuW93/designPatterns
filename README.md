@@ -36,7 +36,7 @@ The hidden constructor (declared private) ensures that the class can never be in
 The public static operation can be accessed easily by using the class name and operation name (Singleton.getInstance()).
 
 4.**Decorator**:https://stackoverflow.com/questions/2707401/understand-the-decorator-pattern-with-a-real-world-example
-The Decorator Pattern attaches additional responsibilities to an object dynamically. Decorators provide a fl exible alternative to subclassing for extending functionality.
+The Decorator Pattern attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
 
 5.**Observer pattern**: The Observer Pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
 So there is a subject and when something change in subject then observators are getting notified. Observators should subscribe and unsubcribe subject when they want and as many times as they want. Example: listeners on e.g buttons in swing.
@@ -56,3 +56,5 @@ In Factory pattern, we create object without exposing the creation logic to the 
 
 9.**Iterator pattern**: provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
 Two menus, one works on arraylist, second on array. So need to use interface iterator then for print both menus we can use one method.
+
+10.**Strategy pattern**:
