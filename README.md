@@ -60,3 +60,5 @@ Two menus, one works on arraylist, second on array. So need to use interface ite
 10.**Strategy pattern**:
 
 11.**State**:
+
+12.**Builder**: when you have many constructors you can use builder. There are two objects e.g Account and Acocunt Builder. In build() method you create Account acc = new Account();
