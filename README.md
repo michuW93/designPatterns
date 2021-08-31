@@ -66,4 +66,5 @@ Two menus, one works on arraylist, second on array. So need to use interface ite
 12.**Combinator**: when you want to check if customer is valid eg. isPhoneNumberValid(), isEmailValid() then you can create a class (CustomerValidationService) and method (isValidCustomer()) which contains both methods mentioned above.
 
 13. **Bridge method**: prevents a `Cartesian product` complexity explosion.
-Example: ThreadScheduler can be preemptive and cooperative, it can also run on windows and linux and we finish with WinPTS, LinuxPTS, WindowsCTS, LinuxCTS
+Example: ThreadScheduler can be preemptive and cooperative, it can also run on windows and linux and we finish with WinPTS, LinuxPTS, WindowsCTS, LinuxCTS 
+or we have Shape(Circle, Square) and Rendering(Vector, Raster) so to not finish with CircleVector, CircleRaster, SquareVector, SquareRaster
