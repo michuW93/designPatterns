@@ -64,3 +64,6 @@ Two menus, one works on arraylist, second on array. So need to use interface ite
 12.**Builder**: when you have many constructors you can use builder. There are two objects e.g Account and Acocunt Builder. In build() method you create Account acc = new Account();
 
 12.**Combinator**: when you want to check if customer is valid eg. isPhoneNumberValid(), isEmailValid() then you can create a class (CustomerValidationService) and method (isValidCustomer()) which contains both methods mentioned above.
+
+13. **Bridge method**: prevents a `Cartesian product` complexity explosion.
+Example: ThreadScheduler can be preemptive and cooperative, it can also run on windows and linux and we finish with WinPTS, LinuxPTS, WindowsCTS, LinuxCTS
