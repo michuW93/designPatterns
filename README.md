@@ -48,7 +48,7 @@ etc.
 Factory pattern is one of the most used design patterns in Java. This type of design pattern comes under creational pattern as this pattern provides one of the best ways to create an object.
 In Factory pattern, we create object without exposing the creation logic to the client and refer to newly created object using a common interface.
 
-7.**Command pattern**: turns a request into a stand-alone object that contains all informations about the request.
+7.**Command pattern**: turns a request into a stand-alone object (command) that contains all informations about the request. Command is passed to invoker object and invoker object decide to which class it should be passed to be executed.
 
 8.**Adapter pattern**:
 
