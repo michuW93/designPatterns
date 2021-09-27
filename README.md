@@ -33,7 +33,7 @@ The key idea in this pattern is to make the class itself responsible for control
 The hidden constructor (declared private) ensures that the class can never be instantiated from outside the class.
 The public static operation can be accessed easily by using the class name and operation name (Singleton.getInstance()).
 
-4.**Decorator**:https://stackoverflow.com/questions/2707401/understand-the-decorator-pattern-with-a-real-world-example
+4.**Decorator**: https://stackoverflow.com/questions/2707401/understand-the-decorator-pattern-with-a-real-world-example
 The Decorator Pattern attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
 
 5.**Observer pattern**: The Observer Pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
