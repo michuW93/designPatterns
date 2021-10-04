@@ -37,6 +37,7 @@ The public static operation can be accessed easily by using the class name and o
 
 4. **Decorator**: https://stackoverflow.com/questions/2707401/understand-the-decorator-pattern-with-a-real-world-example
 The Decorator Pattern attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
+
 We have `Pizza` interface, then we create `PizzaDecorator` class which implements Pizza object and then we can create `VeggiePizzaDecorator`, `CheesePizzaDecorator` etc.
 
 5. **Observer pattern**: The Observer Pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
