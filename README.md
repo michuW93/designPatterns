@@ -8,7 +8,7 @@ a system is very complex or difficult to understand,
 an entry point is needed to each level of layered software, or
 the abstractions and implementations of a subsystem are tightly coupled.
 
-2. **Template method**: The Template Method Pattern defines the skeleton
+2. **Template method**: https://stackoverflow.com/a/69397702/4952262 The Template Method Pattern defines the skeleton
 of an algorithm in a method, deferring some steps to
 subclasses. Template Method lets subclasses redefine
 certain steps of an algorithm without changing the
