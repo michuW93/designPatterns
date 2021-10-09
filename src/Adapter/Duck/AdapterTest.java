@@ -1,4 +1,4 @@
-package Adapter;
+package Adapter.Duck;
 
 public class AdapterTest {
     public static void main(String[] args) {

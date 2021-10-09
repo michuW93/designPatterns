@@ -1,4 +1,4 @@
-package Adapter;
+package Adapter.Duck;
 
 public interface Duck {
     public void quack();
