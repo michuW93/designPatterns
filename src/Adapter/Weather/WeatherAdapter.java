@@ -3,7 +3,9 @@ package Adapter.Weather;
 public class WeatherAdapter {
     public int findTemperature(int zipcode){
         String city = null;
-        if(zipcode == 63400){ //here most probably we would take it from db, in example hardcode is enough
+
+        //here most probably we would take it from db, in example hardcode is enough
+        if(zipcode == 63400){
             city = "Ostrow Wielkopolski";
         }
 
