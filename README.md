@@ -54,7 +54,7 @@ In Factory pattern, we create object without exposing the creation logic to the 
 
 7. **Command pattern**: turns a request into a stand-alone object (command) that contains all informations about the request. Command is passed to invoker object and invoker object decide to which class it should be passed to be executed.
 
-8. **Adapter pattern**:
+8. **Adapter pattern**: we have WeatherUI class which is looking for temperature by zip-code, we have WeatherFinder class which knows temperature by city name so we need to create WeatherAdapter class which will take zipcode and call WeatherFinder class and return proper temperature.
 
 9. **Iterator pattern**: provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
 Two menus, one works on arraylist, second on array. So need to use interface iterator then for print both menus we can use one method.
