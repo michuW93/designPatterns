@@ -59,7 +59,9 @@ In Factory pattern, we create object without exposing the creation logic to the 
 9. **Iterator pattern**: provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
 Two menus, one works on arraylist, second on array. So need to use interface iterator then for print both menus we can use one method.
 
-10. **Strategy pattern**:
+10. **Strategy pattern**: In Java, you can implement the Strategy pattern using interfaces and abstract classes. The Strategy pattern is used when you want to define a family of algorithms, encapsulate each one as an object, and make them interchangeable.
+
+For example, the <b>Collections.sort()</b> method in Java uses the Strategy pattern to sort elements in a collection. The method takes a Comparator object as an argument which defines how elements are compared.
 
 11. **State**:
 
