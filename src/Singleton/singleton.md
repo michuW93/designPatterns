@@ -15,7 +15,7 @@ Cool, seems it works. Let's add another test with threads creating singleton ins
 
 ![img.png](ClassicSingleton/img_classicSingletonMultipleThreadsTestFail.png)
 
-it failed but wait, not always:
+it failed but wait, not always (notice, I didn't change a single character):
 
 ![img.png](ClassicSingleton/img_classicSingletonMultipleThreadsWorks.png)
 
