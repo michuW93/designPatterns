@@ -45,3 +45,4 @@ Let's run test for this version of singleton:
 it's even much faster than classic singleton.
 
 To summarize - sometimes it's worth to go deeper into topic to check if there is a better way to do the same.
+In this example we can see that sometimes not the most natural solution can be the best.
