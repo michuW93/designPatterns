@@ -1,17 +1,18 @@
 # Singleton - has everything already been told?
 
-We all have heard about Singleton design pattern and we all know that it ensures that we have only one instance with easy access. Cool!
+We all have heard about Singleton design pattern which ensures that a class will has only one instance with easy global access.
+We also know that common usages are logging service, properties, global services e.g cache. 
 
-Let's try to implement it, first let's try with the most popular way - private static final field, private constructor and public method to create it.
+Let's try to implement it. First let's try with the most popular way - <b>private static final field</b>, <b>private constructor</b> and <b>public method</b> to create singleton.
 
 ![img.png](ClassicSingleton/img_classicSingletonCode.png)
 
-Okay, so we finished? No.
+Okay, so we finished? No, not yet.
 Let's write test for our classic singleton and run it.
 
 ![img.png](ClassicSingleton/img_classicSingletonTest.png)
 
-Cool, seems it works. Let's add another test with threads creating singleton instance.
+Cool, seems it works. Let's add another test with threads creating many singleton instances.
 
 ![img.png](ClassicSingleton/img_classicSingletonMultipleThreadsTestFail.png)
 
@@ -19,12 +20,12 @@ it failed but wait, not always (notice, I didn't change a single character):
 
 ![img.png](ClassicSingleton/img_classicSingletonMultipleThreadsWorks.png)
 
-now it's even worse - usually our test pass, but sometimes it fails. Okay, using threads you can expect non-deterministic result, but it's really easy to fall into this pit and waste whole day to look for a bug.
+now it's even worse - usually our test pass, but sometimes it fails. Okay, while using threads you can expect non-deterministic result, but it's really easy to fall into this pit and waste whole day to look for a bug.
 Let's try to make it safer and let's synchronize our method.
 
 ![img.png](SynchronizedSingleton/img_synchronizedSingletonCode.png)
 
-Now we can run the same tests which we run for classic singleton (please notice that even times are quite similar, without synchronization it's slightly faster)
+Now we can run the same tests which we run for classic singleton (please notice that even times are quite similar, without synchronization it's slightly faster, but I thought it will be much faster)
 
 ![img.png](SynchronizedSingleton/img_synchronizedSingletonTest.png)
 
@@ -41,4 +42,9 @@ This approach automatically handles serialization and ensures a robust defense a
 Let's run test for this version of singleton:
 ![img.png](EnumSingleton/img_enumSingletonTest.png)
 
-as we can see it's even much faster than classic singleton.
+it's even much faster than classic singleton.
+
+To summarize - sometimes it's worth to go deeper into topic to check if there is a better way to do the same. 
+
+Sources:
+Joshua Bloch Effective Java
