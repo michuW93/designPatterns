@@ -1,7 +1,7 @@
 # Singleton - has everything already been told?
 
 We all have heard about Singleton design pattern which ensures that a class will has only one instance with easy global access.
-We also know that common usages are logging service, properties, global services e.g cache. 
+We also know that common usages are logging service, properties, global services e.g cache. Cool!
 
 Let's try to implement it. First let's try with the most popular way - <b>private static final field</b>, <b>private constructor</b> and <b>public method</b> to create singleton.
 
@@ -44,7 +44,4 @@ Let's run test for this version of singleton:
 
 it's even much faster than classic singleton.
 
-To summarize - sometimes it's worth to go deeper into topic to check if there is a better way to do the same. 
-
-Sources:
-Joshua Bloch Effective Java
+To summarize - sometimes it's worth to go deeper into topic to check if there is a better way to do the same.
