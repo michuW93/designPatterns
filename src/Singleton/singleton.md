@@ -3,7 +3,7 @@
 We all have heard about Singleton design pattern which ensures that a class will has only one instance with easy global access.
 We also know that common usages are logging service, properties, global services e.g cache. Cool!
 
-Let's try to implement it. First let's try with the most popular way - <b>private static final field</b>, <b>private constructor</b> and <b>public method</b> to create singleton.
+Let's try to implement it. First let's try with the most popular way - <b>private static final field</b>, <b>private constructor</b> and <b>public method</b> to create singleton if it doesn't yet exist.
 
 ![img.png](ClassicSingleton/img_classicSingletonCode.png)
 
@@ -12,7 +12,7 @@ Let's write test for our classic, non-thread safe singleton and run it.
 
 ![img.png](ClassicSingleton/img_classicSingletonTest.png)
 
-Cool, seems it works. Let’s add another test with threads attempting to obtain the singleton instance.
+Cool, seems it works. Let’s add another test with many threads attempting to obtain the singleton instance.
 
 ![img.png](ClassicSingleton/img_classicSingletonMultipleThreadsTestFail.png)
 
@@ -38,7 +38,8 @@ we can run it a million times and will always pass, unlike classic singleton. Th
 
 ![img.png](EnumSingleton/img_enumSingletonCode.png)
 
-This approach automatically handles serialization and ensures a robust defense against multiple instantiations, even in the presence of advanced serialization or reflection attacks. Keep in mind that if your Singleton needs to extend a superclass other than Enum, this approach won’t be suitable.
+This approach automatically handles serialization and ensures a robust defense against multiple instantiations, even in the presence of advanced serialization or reflection attacks. 
+Keep in mind that if your Singleton needs to extend a superclass other than Enum, this approach won’t be suitable.
 
 Let's run test for this version of singleton:
 ![img.png](EnumSingleton/img_enumSingletonTest.png)
@@ -46,4 +47,4 @@ Let's run test for this version of singleton:
 it's even much faster than classic singleton.
 
 To summarize - sometimes it's worth to go deeper into topic to check if there is a better way to do the same.
-In this example we can see that sometimes not the most natural solution can be the best.
+In this example we can see that sometimes not the most natural solution can be the best in most cases.
