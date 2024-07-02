@@ -12,7 +12,7 @@ Let's write test for our classic singleton and run it.
 
 ![img.png](ClassicSingleton/img_classicSingletonTest.png)
 
-Cool, seems it works. Let's add another test with threads creating many singleton instances.
+Cool, seems it works. Let's add another test with threads trying to get singleton instance.
 
 ![img.png](ClassicSingleton/img_classicSingletonMultipleThreadsTestFail.png)
 
