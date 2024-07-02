@@ -8,11 +8,11 @@ Let's try to implement it. First let's try with the most popular way - <b>privat
 ![img.png](ClassicSingleton/img_classicSingletonCode.png)
 
 Okay, so we finished? No, not yet.
-Let's write test for our classic singleton and run it.
+Let's write test for our classic, non-thread safe singleton and run it.
 
 ![img.png](ClassicSingleton/img_classicSingletonTest.png)
 
-Cool, seems it works. Let's add another test with threads trying to get singleton instance.
+Cool, seems it works. Let’s add another test with threads attempting to obtain the singleton instance.
 
 ![img.png](ClassicSingleton/img_classicSingletonMultipleThreadsTestFail.png)
 
@@ -21,11 +21,12 @@ it failed but wait, not always (notice, I didn't change a single character):
 ![img.png](ClassicSingleton/img_classicSingletonMultipleThreadsWorks.png)
 
 now it's even worse - usually our test pass, but sometimes it fails. Okay, while using threads you can expect non-deterministic result, but it's really easy to fall into this pit and waste whole day to look for a bug.
-Let's try to make it safer and let's synchronize our method.
+So we can see that with many threads our singleton is not singleton, and we have many instances of it.
+Let's try to make it safer and let's synchronize our method so one thread will block other threads.
 
 ![img.png](SynchronizedSingleton/img_synchronizedSingletonCode.png)
 
-Now we can run the same tests which we run for classic singleton (please notice that even times are quite similar, without synchronization it's slightly faster, but I thought it will be much faster)
+Now we can run the same tests which we run for classic, non-thread safe singleton (please notice that even times are quite similar, without synchronization it's slightly faster, but I thought it will be much faster)
 
 ![img.png](SynchronizedSingleton/img_synchronizedSingletonTest.png)
 
